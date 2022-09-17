@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --normal-font: 'Roboto', sans-serif;
+
+    --color-dark: #05041a
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(119, 117, 117);
+}
+
+p, a, h1, h2, h3 {
+    font-family: var(--normal-font);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+/*Acima são CONGIFURAÇÕES GERAIS*/
+
+/*Aqui começa o CABEÇALHO*/
+header {
+    padding: 25px 50px;
+    top: 0;
+    position: sticky;
+    margin-bottom: 10px;
+    background-color: var(--color-dark);
+    color: rgb(230, 230, 230);
+}
+
+header h1 {
+    font-size: 3.0em;
+}
+
+nav {
+    text-align: right;
+    margin: -20px 100px;
+}
+
+nav a {
+    padding: 4px 15px;
+    border-radius: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: white;
+    color: var(--color-dark);
+    transition: 0.3s;
+}
+/*Aqui termina o CABEÇALHO*/
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: rgb(230, 230, 230);
+}
+
+main p {
+    font-size: 1.4em;
+    color: var(--color-dark);
+    padding: 12px;
+    line-height: 34px;
+}
+
+/*Aqui começa o CURRÍCULO*/
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.curriculo {
+    text-align: center;
+}
+
+main.curriculo h1 {
+    font-size: 3.0em;
+    padding: 30px 0px 20px 0px;
+}
+
+div#curriculo {
+    width: 800px;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+div#curriculo img {
+    width: 100%;
+    box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.151);
+}
+
+a#download {
+    margin-bottom: 20px;
+    padding: 7px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--color-dark);
+    background-color: white;
+    font-weight: 900;
+    font-size: 1.4em;
+    line-height: 60px;
+    color: var(--color-dark);
+}
+
+a#download:hover {
+    background-color: var(--color-dark);
+    color: white;
+    padding: 8px;
+    transition: 0.3s;
+}
+/*Aqui termina o CURRÍCULO*/
+
+/*Aqui começa o SOBRE*/
+main#sobre h1, h2, h3 {
+    padding: 10px;
+}
+
+main#sobre h1 {
+    font-size: 2.5em;
+}
+
+main#sobre h2 {
+    padding-bottom: 50px;
+}
+
+main#sobre article {
+    padding: 20px;
+}
+
+main#sobre article p {
+    padding: 0px;
+}
+
+main#sobre h3 {
+    font-size: 2.0em;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+main#sobre > img {
+    float: right;
+    padding: 20px;
+    width: 35%;
+    border-radius: 50%;
+}
+main#sobre article img {
+    width: 100px;
+    display: inline;
+}
+/*Aqui termina o SOBRE*/
+
+/*Aqui começa o CONTATO*/
+main#contato div {
+    padding: 20px;
+}
+
+main#contato div p {
+    padding: 0px;
+}
+
+main#contato div a {
+    color: black;
+    font-weight: bold;
+}
+
+main#contato h1 {
+    padding: 10px;
+}
+
+#container_contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.content_contact a:hover {
+    text-decoration: underline;
+}
+
+.content_contact {
+    width: 40%;
+}
+/*Aqui termina o CONTATO*/
+
+/*Aqui começa o FOOTER*/
+footer {
+    padding: 13px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: var(--color-dark);
+    color: rgb(230, 230, 230);
+}
+
+footer p {
+    display: inline;
+    padding: 1px 50px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/*Aqui termina o FOOTER*/
