@@ -74,6 +74,86 @@ main p {
     line-height: 34px;
 }
 
+/*Aqui começa o INDEX*/
+section#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section#container a {
+    color: var(--color-dark);
+}
+
+section#container a:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+section#container > p {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+section#container > h2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 2.0em;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+div#content_logo {
+    width: 25%;
+    text-align: center;
+}
+
+img#logo {
+    width: 100%;
+}
+
+div#content_phrase {
+    width: 50%;
+}
+
+div#content_phrase > h1 {
+    font-size: 2.7em;
+}
+
+div#name_projects {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+div#name_projects > h1 {
+    font-size: 2.3em;
+}
+
+div.content_projects {
+    width: 100%;
+    height: 60vh;
+    padding: 50px 0px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+div.content_projects > h2 {
+    padding-top: 50px;
+    font-size: 2.0em;
+}
+
+div#project_1 {
+    background: black url("../images/incursao.png") center top fixed;
+    background-size: cover;
+}
+/*Aqui termina o INDEX*/
+
 /*Aqui começa o CURRÍCULO*/
 .content {
     display: flex;
