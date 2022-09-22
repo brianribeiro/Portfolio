@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 :root {
     --normal-font: 'Roboto', sans-serif;
+    --display-font: 'Poiret One', cursive;
 
-    --color-dark: #05041a
+    --color-dark: #05041a;
+    --color-regular: #05041a50;
+    --color-light: #1c16941a;
 }
 
 * {
@@ -13,7 +17,7 @@
 
 body {
     min-height: 100vh;
-    background-color: rgb(119, 117, 117);
+    background-color: var(--color-regular);
 }
 
 p, a, h1, h2, h3 {
@@ -30,7 +34,9 @@ a {
 header {
     padding: 25px 50px;
     top: 0;
+    z-index: 1;
     margin-bottom: 10px;
+    position: sticky;
     background-color: var(--color-dark);
     color: rgb(230, 230, 230);
 }
@@ -63,7 +69,7 @@ main {
     margin: auto;
     border-radius: 15px;
     padding: 15px;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(240, 240, 240);
 }
 
 main p {
@@ -93,22 +99,31 @@ img#logo {
 
 div#content_phrase {
     width: 50%;
+    padding: 20px 0px;
 }
 
 div#content_phrase > h1 {
-    font-size: 2.7em;
+    font-family: var(--display-font);
+    font-size: 2.6em;
+    line-height: 1.3em;
 }
 
 div#name_projects {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 20px;
+    border-radius: 20px 20px 0px 0px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--color-light);
 }
 
 div#name_projects > h1 {
     font-size: 2.3em;
+}
+
+div#name_projects img {
+    width: 60px;
+    margin-top: 20px;
 }
 
 div.content_projects {
@@ -125,17 +140,17 @@ div.content_projects {
 div.space_between_projects {
     width: 100%;
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--color-light);
 }
 
 div#project_1 {
 
-    background: black url("../images/incursao.png") center top fixed;
+    background: black url("../images/incursao.jpg") center top fixed;
     background-size: cover;
 }
 
 div#project_2 {
-    background: black url("../images/wp_dragao.jpg") center top fixed;
+    background: black url("../images/redes.jpg") center top fixed;
     background-size: cover;
 }
 
