@@ -8,6 +8,7 @@
     --color-dark: #05041a;
     --color-regular: #05041a50;
     --color-light: #1c16941a;
+    --color-whitest: #f0f0f0;
 }
 
 * {
@@ -32,48 +33,68 @@ a {
 
 /*Aqui começa o CABEÇALHO*/
 header {
-    padding: 25px 50px;
+    padding: 25px 50px 5px 50px;
     top: 0;
     z-index: 1;
     margin-bottom: 10px;
-    position: sticky;
+    text-align: center;
     background-color: var(--color-dark);
-    color: rgb(230, 230, 230);
+    color: var(--color-whitest);
 }
 
 header h1 {
-    font-size: 3.0em;
+    font-size: 2.7em;
 }
 
 nav {
-    text-align: right;
-    margin: -20px 100px;
+    margin: 25px 100px;
+}
+
+button#nav_button {
+    background-color: transparent;
+    border-style: none;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+
+button#nav_button > img {
+    width: 30px;
+}
+
+button#nav_button:hover {
+    background-color: red;
+}
+
+nav a.nav_options {
+    display: none;
 }
 
 nav a {
-    padding: 4px 15px;
+    padding: 4px 10px;
     border-radius: 10px;
     font-size: 1.4em;
     font-weight: bold;
+    line-height: 50px;
 }
 
 nav a:hover {
-    background-color: white;
+    background-color: var(--color-whitest);
     color: var(--color-dark);
     transition: 0.3s;
 }
 /*Aqui termina o CABEÇALHO*/
 
 main {
-    max-width: 1200px;
+    max-width: 100vw;
     margin: auto;
-    border-radius: 15px;
     padding: 15px;
-    background-color: rgb(240, 240, 240);
+    background-color: var(--color-whitest);
 }
 
 main p {
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: var(--color-dark);
     padding: 12px;
     line-height: 34px;
@@ -207,12 +228,12 @@ main.curriculo {
 }
 
 main.curriculo h1 {
-    font-size: 3.0em;
+    font-size: 2.7em;
     padding: 30px 0px 20px 0px;
 }
 
 div#curriculo {
-    width: 800px;
+    width: 95%;
     margin: auto;
     padding: 30px 0px;
 }
@@ -246,6 +267,7 @@ a#download:hover {
 /*Aqui começa o SOBRE*/
 main#sobre h1, h2, h3 {
     padding: 10px;
+    text-align: center;
 }
 
 main#sobre h1 {
@@ -256,29 +278,11 @@ main#sobre h2 {
     padding-bottom: 50px;
 }
 
-main#sobre article {
-    padding: 20px;
-}
-
-main#sobre article p {
-    padding: 0px;
-}
-
-main#sobre h3 {
-    font-size: 2.0em;
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-
 main#sobre > img {
     float: right;
     padding: 20px;
-    width: 35%;
+    width: 50%;
     border-radius: 50%;
-}
-main#sobre article img {
-    width: 100px;
-    display: inline;
 }
 /*Aqui termina o SOBRE*/
 
@@ -322,15 +326,92 @@ footer {
     margin-top: 10px;
     text-align: center;
     background-color: var(--color-dark);
-    color: rgb(230, 230, 230);
+    color: var(--color-whitest);
 }
 
 footer p {
-    display: inline;
-    padding: 1px 50px;
+    line-height: 27px;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
 /*Aqui termina o FOOTER*/
+
+/*Aqui começa o NOTEBOOK*/
+@media only screen and (min-width: 1200px) {
+    /*Aqui começa o CABEÇALHO*/
+    header {
+        padding: 25px 50px;
+        position: sticky;
+        text-align: left;
+    }
+    
+    header h1 {
+        font-size: 3.0em;
+    }
+    
+    nav {
+        text-align: right;
+        margin: -20px 100px;
+    }
+    
+    nav a {
+        padding: 4px 15px;
+        font-size: 1.5em;
+        line-height: normal;
+    }
+
+    button#nav_button {
+        display: none;
+    }
+    
+    nav a.nav_options {
+        display: inline-block;
+    }
+    /*Aqui termina o CABEÇALHO*/
+
+    /*Aqui começam as CONFIGURAÇÕES GERAIS*/
+    main {
+        max-width: 1200px;
+        border-radius: 15px;
+    }
+    
+    main p {
+        font-size: 1.4em;
+    }
+    /*Aqui terminam as CONFIGURAÇÕES GERAIS*/
+
+    /*Aqui começa o CURRÍCULO*/
+    main.curriculo h1 {
+        font-size: 3.0em;
+    }
+
+    div#curriculo {
+        width: 800px;
+    }
+    /*Aqui termina o CURRÍCULO*/
+
+    /*Aqui começa o SOBRE*/
+    main#sobre h1, h2, h3 {
+        text-align: left;
+    }
+
+    main#sobre > img {
+        float: right;
+        padding: 20px;
+        width: 35%;
+        border-radius: 50%;
+    }
+    /*Aqui termina o SOBRE*/
+
+    /*Aqui começa o FOOTER*/
+    footer p {
+        display: inline;
+        padding: 1px 50px;
+        line-height: normal;
+    }
+    /*Aqui termina o FOOTER*/
+    }
+
+/*Aqui termina o NOTEBOOK*/
