@@ -63,10 +63,6 @@ button#nav_button > img {
     width: 30px;
 }
 
-button#nav_button:hover {
-    background-color: red;
-}
-
 nav a.nav_options {
     display: none;
 }
@@ -103,14 +99,12 @@ main p {
 /*Aqui começa o INDEX*/
 section#container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 div#content_logo {
-    width: 25%;
+    width: 40%;
     text-align: center;
 }
 
@@ -119,13 +113,14 @@ img#logo {
 }
 
 div#content_phrase {
-    width: 50%;
+    width: 90%;
     padding: 20px 0px;
 }
 
 div#content_phrase > h1 {
     font-family: var(--display-font);
-    font-size: 2.6em;
+    font-size: 2.4em;
+    text-align: justify;
     line-height: 1.3em;
 }
 
@@ -139,11 +134,11 @@ div#name_projects {
 }
 
 div#name_projects > h1 {
-    font-size: 2.3em;
+    font-size: 2.1em;
 }
 
 div#name_projects img {
-    width: 60px;
+    width: 40px;
     margin-top: 20px;
 }
 
@@ -152,10 +147,9 @@ div.content_projects {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 500px;
+    height: 720px;
     padding: 50px 0px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.1);
 }
 
 div.space_between_projects {
@@ -165,7 +159,6 @@ div.space_between_projects {
 }
 
 div#project_1 {
-
     background: black url("../images/incursao.jpg") center top fixed;
     background-size: cover;
 }
@@ -176,7 +169,7 @@ div#project_2 {
 }
 
 div.project_description {
-    width: 50%;
+    width: 70%;
     margin: auto;
     padding: 20px;
     border-style: solid;
@@ -287,6 +280,10 @@ main#sobre > img {
 /*Aqui termina o SOBRE*/
 
 /*Aqui começa o CONTATO*/
+main#contato {
+    text-align: center;
+}
+
 main#contato div {
     padding: 20px;
 }
@@ -296,7 +293,7 @@ main#contato div p {
 }
 
 main#contato div a {
-    color: black;
+    color: var(--color-dark);
     font-weight: bold;
 }
 
@@ -306,9 +303,9 @@ main#contato h1 {
 
 #container_contact {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    padding: 40px 0px;
+    padding: 20px 0px;
 }
 
 .content_contact a:hover {
@@ -316,7 +313,7 @@ main#contato h1 {
 }
 
 .content_contact {
-    width: 40%;
+    width: 100%;
 }
 /*Aqui termina o CONTATO*/
 
@@ -382,6 +379,51 @@ footer a:hover {
     }
     /*Aqui terminam as CONFIGURAÇÕES GERAIS*/
 
+    /*Aqui começa o INDEX*/
+    section#container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    div#content_logo {
+        width: 25%;
+    }
+
+    div#content_phrase {
+        width: 50%;
+    }
+
+    div#content_phrase > h1 {
+        font-size: 2.6em;
+        text-align: left;
+    }
+
+    div#name_projects > h1 {
+        font-size: 2.3em;
+    }
+
+    div#name_projects img {
+        width: 60px;
+    }
+
+    div.content_projects {
+        height: 500px;
+    }
+
+    div.project_description {
+        width: 50%;
+    }
+
+    div.project_description h2 {
+        text-align: center;
+    }
+
+    div.project_description h3 {
+        text-align: center;
+    }
+    /*Aqui termina o INDEX*/
+
     /*Aqui começa o CURRÍCULO*/
     main.curriculo h1 {
         font-size: 3.0em;
@@ -404,6 +446,20 @@ footer a:hover {
         border-radius: 50%;
     }
     /*Aqui termina o SOBRE*/
+
+    /*Aqui começa o CONTATO*/
+    main#contato {
+        text-align: left;
+    }
+
+    #container_contact {
+        flex-direction: row;
+    }
+
+    .content_contact {
+        width: 40%;
+    }
+    /*Aqui termina o CONTATO*/
 
     /*Aqui começa o FOOTER*/
     footer p {
