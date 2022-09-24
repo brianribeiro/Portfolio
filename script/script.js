@@ -3,7 +3,7 @@ function drop_menu() {
     var drop
     if (nav[0].style.display === "none") {
         for (drop = 0; drop < nav.length; drop++) {
-            nav[drop].style.display = "inline-block"
+            nav[drop].style.display = "block"
         }
     } else {
         for (drop = 0; drop < nav.length; drop++) {
