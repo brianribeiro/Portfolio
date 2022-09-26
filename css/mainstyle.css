@@ -367,8 +367,8 @@ p.p_right img {
 }
 /*Aqui termina o FOOTER*/
 
-/*Aqui começam os CELULARES PEQUENOS*/
-@media only screen and (min-width: 500px) {
+/*Aqui começam os SMARTPHONES*/
+@media only screen and (min-width: 400px) {
     /*Aqui começa o CABEÇALHO*/
     header h1 {
         font-size: 2.7em;
@@ -476,9 +476,9 @@ p.p_right img {
     }
     /*Aqui termina o FOOTER*/
 }
-/*Aqui terminam os CELULARES PEQUENOS*/
+/*Aqui terminam os SMARTPHONES*/
 
-/*Aqui começa o SMARTPHONE*/
+/*Aqui começa o TABLET*/
 @media only screen and (min-width: 720px) {
     /*Aqui começa o INDEX*/
     div#content_logo {
@@ -504,7 +504,7 @@ p.p_right img {
     }
 /*Aqui termina o SOBRE*/
 }
-/*Aqui termina o SMARTPHONE*/
+/*Aqui termina o TABLET*/
 
 /*Aqui começa o NOTEBOOK*/
 @media only screen and (min-width: 1081px) {
