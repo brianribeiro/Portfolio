@@ -44,10 +44,11 @@ header {
 }
 
 header h1 {
-    font-size: 2.7em;
+    font-size: 2.0em;
 }
 
 header p {
+    font-size: 0.75em;
     color: var(--color-whitest);
 }
 
@@ -65,7 +66,7 @@ button#nav_button {
 }
 
 button#nav_button > img {
-    width: 30px;
+    width: 20px;
 }
 
 nav a.nav_options {
@@ -77,7 +78,7 @@ nav a.nav_options {
 nav a {
     padding: 4px 10px;
     border-radius: 10px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: bold;
     line-height: 50px;
 }
@@ -97,7 +98,7 @@ main {
 }
 
 main p {
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: var(--color-dark);
     padding: 12px;
     line-height: 34px;
@@ -111,7 +112,7 @@ section#container {
 }
 
 div#content_logo {
-    width: 40%;
+    width: 30%;
     text-align: center;
 }
 
@@ -120,20 +121,20 @@ img#logo {
 }
 
 div#content_phrase {
-    width: 90%;
+    width: 100%;
     padding: 20px 0px;
 }
 
 div#content_phrase > h1 {
     font-family: var(--display-font);
-    font-size: 2.4em;
-    text-align: justify;
+    font-size: 1.3em;
+    text-align: center;
     line-height: 1.3em;
 }
 
 div#name_projects {
     width: 100%;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 20px;
     border-radius: 20px 20px 0px 0px;
     text-align: center;
@@ -141,11 +142,15 @@ div#name_projects {
 }
 
 div#name_projects > h1 {
-    font-size: 2.1em;
+    font-size: 1.5em;
+}
+
+div#name_projects a {
+    color: var(--color-dark);
 }
 
 div#name_projects img {
-    width: 40px;
+    width: 25px;
     margin-top: 20px;
 }
 
@@ -154,29 +159,33 @@ div.content_projects {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 720px;
     padding: 50px 0px;
     text-align: center;
 }
 
 div.space_between_projects {
     width: 100%;
-    height: 50px;
+    height: 40px;
     background-color: var(--color-light);
 }
 
 div#project_1 {
-    background: black url("../images/incursao.jpg") center top fixed;
+    background: black url("../images/incursao.jpg") center center fixed;
     background-size: cover;
 }
 
 div#project_2 {
-    background: black url("../images/redes.jpg") center top fixed;
+    background: black url("../images/portfolio.jpg") center center fixed;
+    background-size: cover;
+}
+
+div#project_3 {
+    background: black url("../images/redes.jpg") center center fixed;
     background-size: cover;
 }
 
 div.project_description {
-    width: 70%;
+    width: 75%;
     margin: auto;
     padding: 20px;
     border-style: solid;
@@ -187,23 +196,24 @@ div.project_description {
 }
 
 div.project_description > h2 {
-    padding-top: 40px;
-    font-size: 2.1em;
+    padding-top: 20px;
+    font-size: 1.7em;
     font-weight: 900;
 }
 
 div.project_description > h3 {
     padding-bottom: 30px;
+    font-size: 0.9em;
 }
 
 div.project_description > a {
     display: inline-block;
-    margin: 20px 30px;
+    margin: 15px 10px;
     padding: 7px;
     border-radius: 10px;
     border-style: solid;
     border-color: var(--color-dark);
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 900;
     color: var(--color-dark);
     background-color: white
@@ -228,12 +238,12 @@ main.curriculo {
 }
 
 main.curriculo h1 {
-    font-size: 2.7em;
+    font-size: 2.0em;
     padding: 30px 0px 20px 0px;
 }
 
 div#curriculo {
-    width: 95%;
+    width: 100%;
     margin: auto;
     padding: 30px 0px;
 }
@@ -251,7 +261,7 @@ a#download {
     border-color: var(--color-dark);
     background-color: white;
     font-weight: 900;
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height: 60px;
     color: var(--color-dark);
 }
@@ -271,17 +281,19 @@ main#sobre h1, h2, h3 {
 }
 
 main#sobre h1 {
-    font-size: 2.5em;
+    font-size: 2.0em;
 }
 
 main#sobre h2 {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    font-size: 1.2em;
 }
 
 main#sobre > img {
-    float: right;
+    display: block;
+    margin: auto;
     padding: 20px;
-    width: 50%;
+    width: 70%;
     border-radius: 50%;
 }
 /*Aqui termina o SOBRE*/
@@ -330,6 +342,7 @@ div#iframe > iframe {
 
 /*Aqui começa o FOOTER*/
 footer {
+    bottom: 0;
     padding: 13px;
     margin-top: 10px;
     text-align: center;
@@ -339,16 +352,162 @@ footer {
 
 footer p {
     color: var(--color-whitest);
+    font-size: 0.8em;
     line-height: 27px;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
+
+p.p_right img {
+    width: 25px;
+    margin: 20px 20px 0px 20px;
+    padding: 0px 3px;
+}
 /*Aqui termina o FOOTER*/
 
+/*Aqui começam os CELULARES PEQUENOS*/
+@media only screen and (min-width: 500px) {
+    /*Aqui começa o CABEÇALHO*/
+    header h1 {
+        font-size: 2.7em;
+    }
+
+    header p {
+        font-size: 1.0em;
+    }
+
+    button#nav_button > img {
+        width: 30px;
+    }
+
+    nav a {
+        font-size: 1.4em;
+    }
+    /*Aqui termina o CABEÇALHO*/
+
+    main p {
+        font-size: 1.3em;
+    }
+
+    /*Aqui começa o INDEX*/
+    div#content_logo {
+        width: 40%;
+    }
+
+    div#content_phrase {
+        width: 90%;
+    }
+
+    div#content_phrase > h1 {
+        font-size: 1.8em;
+    }
+
+    div#name_projects {
+        padding-top: 50px;
+    }
+
+    div#name_projects > h1 {
+        font-size: 2.1em;
+    }
+
+    div#name_projects img {
+        width: 40px;
+    }
+
+    div.content_projects {
+        height: 720px;
+    }
+
+    div.space_between_projects {
+        height: 50px;
+    }
+
+    div.project_description {
+        width: 70%;
+    }
+
+    div.project_description > h2 {
+        padding-top: 40px;
+        font-size: 2.1em;
+    }
+
+    div.project_description > h3 {
+        font-size: 1.1em;
+    }
+
+    div.project_description > a {
+        margin: 20px 15px;
+        font-size: 1.4em;
+    }
+    /*Aqui termina o INDEX*/
+
+    /*Aqui começa o CURRÍCULO*/
+    main.curriculo h1 {
+        font-size: 2.7em;
+    }
+
+    div#curriculo {
+        width: 95%;
+    }
+
+    a#download {
+        font-size: 1.4em;
+    }
+    /*Aqui termina o CURRÍCULO*/
+
+    /*Aqui começa o SOBRE*/
+    main#sobre h1 {
+        font-size: 2.5em;
+    }
+
+    main#sobre h2 {
+        font-size: 1.5em;
+    }
+    /*Aqui termina o SOBRE*/
+
+    /*Aqui começa o CONTATO*/
+    /*Aqui termina o CONTATO*/
+
+    /*Aqui começa o FOOTER*/
+    footer p {
+        font-size: 1.0em;
+    }
+    /*Aqui termina o FOOTER*/
+}
+/*Aqui terminam os CELULARES PEQUENOS*/
+
+/*Aqui começa o SMARTPHONE*/
+@media only screen and (min-width: 720px) {
+    /*Aqui começa o INDEX*/
+    div#content_logo {
+        width: 30%;
+    }
+
+    div#content_phrase > h1 {
+        font-size: 2.3em;
+    }
+
+    div#name_projects > h1 {
+        font-size: 2.3em;
+    }
+    /*Aqui termina o INDEX*/
+
+    /*Aqui começa o SOBRE*/
+    main#sobre h2 {
+        padding-bottom: 30px;
+    }
+
+    main#sobre > img {
+        width: 40%;
+    }
+/*Aqui termina o SOBRE*/
+}
+/*Aqui termina o SMARTPHONE*/
+
 /*Aqui começa o NOTEBOOK*/
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1081px) {
     /*Aqui começa o CABEÇALHO*/
     header {
         padding: 25px 50px;
@@ -434,6 +593,10 @@ footer a:hover {
     div.project_description h3 {
         text-align: center;
     }
+
+    div.project_description > a {
+        margin: 20px 30px;
+    }
     /*Aqui termina o INDEX*/
 
     /*Aqui começa o CURRÍCULO*/
@@ -453,6 +616,8 @@ footer a:hover {
 
     main#sobre > img {
         float: right;
+        display: inline;
+        margin: auto;
         padding: 20px;
         width: 35%;
         border-radius: 50%;
@@ -478,6 +643,12 @@ footer a:hover {
         display: inline;
         padding: 1px 50px;
         line-height: normal;
+    }
+
+    p.p_right img {
+        width: 20px;
+        margin: 0px 10px;
+        padding: 0px 3px;
     }
     /*Aqui termina o FOOTER*/
     }

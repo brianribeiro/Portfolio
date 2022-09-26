@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Brian Ribeiro</title>
     <link rel="stylesheet" href="css/mainstyle.css">
-    <link rel="shortcut icon" href="images/icone_port.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icon_portfolio.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -15,6 +15,7 @@
 
         <nav id="nav_menu">
             <button id="nav_button" onclick="drop_menu()"><img src="images/down_arrow_nav.png" alt="Abrir menu de opções"></button>
+            <a class="nav_options" href="index.html#projects">Projetos</a>
             <a class="nav_options" href="resume.html">Currículo</a>
             <a class="nav_options" href='about.html'>Sobre mim</a>
             <a class="nav_options" href="contact.html">Contato</a>
@@ -33,7 +34,7 @@
             </div>
 
             <div id="name_projects">
-                <h1>Projetos</h1>
+                <h1><a name="projects">Projetos</a></h1>
                 <img src="images/down_arrow.png" alt="Ir para os projetos">
             </div>
 
@@ -51,6 +52,17 @@
 
             <div class="content_projects" id="project_2">
                 <div class="project_description">
+                    <h2>Portfólio</h2>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Este mesmo site, desenvolvido para divulgar minha experiência nas áreas</p>
+                    <a href="https://github.com/brianribeiro/Portfolio" target="_blank">Código</a>
+                </div>
+            </div>
+
+            <div class="space_between_projects"></div>
+
+            <div class="content_projects" id="project_3">
+                <div class="project_description">
                     <h2>Projeto Redes Sociais</h2>
                     <h3>Desenvolvimento Web</h3>
                     <p>Projeto montado durante a realização de um curso online de HTML e CSS</p>
@@ -62,8 +74,8 @@
         </section>
     </main>
     <footer>
-        <p class="p_left">Entre em contato! Você pode me encontrar através do e-mail <a href="mailto:brian_ribeiro@outlook.com" target="_blank">brian_ribeiro@outlook.com</a></p>
-        <p class="p_right"><a href="https://www.linkedin.com/in/brian-ribeiro-developer/" target="_blank">LinkedIn</a> <a href="https://www.facebook.com/brian.spfc" target="_blank">Facebook</a> <a href="https://www.instagram.com/brian_felipe_r/" target="_blank">Instagram</a></p>
+        <p>Entre em contato! Você pode me encontrar através do e-mail <a href="mailto:brian_ribeiro@outlook.com" target="_blank">brian_ribeiro@outlook.com</a></p>
+        <p class="p_right"><a href="https://www.linkedin.com/in/brian-ribeiro-developer/" target="_blank"><img src="images/icon_linkedin.png" alt="Perfil no LinkedIn"></a> <a href="https://www.facebook.com/brian.spfc" target="_blank"><img src="images/icon_facebook.png" alt="Perfil no Facebook"></a> <a href="https://www.instagram.com/brian_felipe_r/" target="_blank"><img src="images/icon_instagram.png" alt="Perfil no Instagram"></a></p>
     </footer>
     <script src="script/script.js"></script>
 </body>
