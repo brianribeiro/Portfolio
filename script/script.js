@@ -1,3 +1,5 @@
+drop_menu()
+
 function drop_menu() {
     var nav = document.getElementById("nav_menu").querySelectorAll(".nav_options")
     var drop

@@ -62,7 +62,12 @@ button#nav_button {
     border-radius: 15px;
     display: block;
     margin: auto;
-    padding: 15px;
+    padding: 13px;
+}
+
+button#nav_button:hover {
+    cursor: pointer;
+    background-color: var(--color-light);
 }
 
 button#nav_button > img {
