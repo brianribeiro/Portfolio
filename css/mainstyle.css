@@ -179,12 +179,18 @@ div#project_1 {
     background-size: cover;
 }
 
+
 div#project_2 {
-    background: black url("../images/portfolio.jpg") center center fixed;
+    background: black url("../images/FolkMetal.jpg") center center fixed;
     background-size: cover;
 }
 
 div#project_3 {
+    background: black url("../images/portfolio.jpg") center center fixed;
+    background-size: cover;
+}
+
+div#project_4 {
     background: black url("../images/redes.jpg") center center fixed;
     background-size: cover;
 }
