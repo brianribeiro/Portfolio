@@ -301,6 +301,51 @@ main#sobre > img {
     width: 70%;
     border-radius: 50%;
 }
+
+section#container_certificates {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+section.content_certificates {
+    width: 100%;
+    text-align: center;
+}
+
+h1#certificates {
+    margin-top: 50px;
+}
+
+section.content_certificates h2 {
+    margin-top: 20px;
+    padding-top: 30px;
+    background-color: var(--color-light);
+}
+
+section.content_certificates h3 {
+    font-size: 1.3em;
+    padding-top: 20px;
+}
+
+section.content_certificates a {
+    color: var(--color-dark);
+}
+
+section.content_certificates a:hover {
+    text-decoration: underline;
+}
+
+section.content_certificates p {
+    font-size: 1.0em;
+    line-height: 0.5em;
+}
+
+section.content_certificates hr {
+    width: 90%;
+    margin-top: 10px;
+}
 /*Aqui termina o SOBRE*/
 
 /*Aqui começa o CONTATO*/
@@ -626,6 +671,15 @@ p.p_right img {
         padding: 20px;
         width: 35%;
         border-radius: 50%;
+    }
+
+    section#container_certificates {
+        flex-direction: row;
+    }
+    
+    section.content_certificates {
+        width: 33%;
+        text-align: left;
     }
     /*Aqui termina o SOBRE*/
 
