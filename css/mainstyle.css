@@ -175,13 +175,12 @@ div.space_between_projects {
 }
 
 div#project_1 {
-    background: black url("../images/incursao.jpg") center center fixed;
+    background: black url("../images/einherjar.jpg") center center fixed;
     background-size: cover;
 }
 
-
 div#project_2 {
-    background: black url("../images/FolkMetal.jpg") center center fixed;
+    background: black url("../images/incursao.jpg") center center fixed;
     background-size: cover;
 }
 
