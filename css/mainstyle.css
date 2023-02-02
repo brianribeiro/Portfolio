@@ -175,21 +175,31 @@ div.space_between_projects {
 }
 
 div#project_1 {
-    background: black url("../images/einherjar.jpg") center center fixed;
+    background: black url("../images/VizinhancaSegura.jpg") center center fixed;
     background-size: cover;
 }
 
 div#project_2 {
-    background: black url("../images/incursao.jpg") center center fixed;
+    background: black url("../images/petlovers.jpg") center center fixed;
     background-size: cover;
 }
 
 div#project_3 {
-    background: black url("../images/portfolio.jpg") center center fixed;
+    background: black url("../images/einherjar.jpg") center center fixed;
     background-size: cover;
 }
 
 div#project_4 {
+    background: black url("../images/incursao.jpg") center center fixed;
+    background-size: cover;
+}
+
+div#project_5 {
+    background: black url("../images/portfolio.jpg") center center fixed;
+    background-size: cover;
+}
+
+div#project_6 {
     background: black url("../images/redes.jpg") center center fixed;
     background-size: cover;
 }
